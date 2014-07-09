@@ -1,4 +1,4 @@
-<div class="page-header", margin: 10px 0px 20px;>
+<div class="page-header", margin: 10px  ;>
 <h1>All of the Statuses </h1>
   
 </div>
@@ -11,7 +11,7 @@
 
 <% @statuses.each do |status| %>
 <div class="status">
-  <strong><%=status.name %></strong>
+  <strong><%= status.user.full_name %> </strong>
   <p> <%=status.content%> </p>
   <div class="meta">
     <%=link_to time_ago_in_words(status.created_at)+ " "+ "ago", status %>
