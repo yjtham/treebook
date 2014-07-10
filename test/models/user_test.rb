@@ -30,6 +30,8 @@ class UserTest < ActiveSupport::TestCase
 
 	test "a user should have a profile name without spaces" do 
 		user = User.new(first_name: 'June', last_name: "Tham", email: 'yjtham@hotmail.com')
+		
+		user.password= user.password_confirmation = 'password'
 		user.profile_name = "My Profile With Spaces"
 
 		assert !user.save
