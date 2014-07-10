@@ -11,7 +11,7 @@ gem 'devise'
 gem 'simple_form'
 
 group :development, :test do
-	gem 'sqlite3'
+	gem 'pg'
 end
 
 
@@ -50,3 +50,5 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 gem 'rails_12factor', group: :production
+
+ruby "2.1.1"
