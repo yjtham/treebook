@@ -12,7 +12,7 @@
 	margin: 4px 0;
 }
 
-.status.hover{
+.status:hover{
 	background: #FAFAFA;
 }
 
@@ -20,7 +20,7 @@
 	display: none;
 }
 
-.status.hover .admin{
+.status:hover .admin{
 	display: inline;	
 }
 
