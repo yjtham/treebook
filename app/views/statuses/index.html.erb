@@ -12,9 +12,7 @@
 <% @statuses.each do |status| %>
 <div class="status">
   <!-- Codes by HTML.am -->
-<div style="width:150px;height:150px;line-height:3em;overflow:scroll;padding:5px;color:#714D03;">
-
-
+<div style="line-height:3em;overflow:scroll;padding:5px;color:#714D03;">
   <div class= "row">
   <div class= "span1">
     <%= image_tag status.user.gravatar_url %>
@@ -31,6 +29,7 @@
     </div>
   </div>
   </div>
+  </div>
   <form action="/html/tags/html_form_tag_action.cfm" method="post">
 Comments:<br />
 <textarea name="comments" id="comments">
@@ -39,6 +38,6 @@ Hey... say something!
 <input type="submit" value="Submit" />
 </form>
 </div>
-</div>
+
 <% end %>
 
