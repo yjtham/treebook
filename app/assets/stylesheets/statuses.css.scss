@@ -5,7 +5,12 @@
 .status {
 	border-bottom: solid 1px #CCC;
 	padding:5px 0;
-
+.container {
+      width: 400px;
+      height: 300px;
+      background-color: #DCDCDC;
+      overflow: scroll; /* showing scrollbars */
+}
 }
 
 .status p{
@@ -24,10 +29,5 @@
 	display: inline;	
 }
 
-.container {
-      width: 400px;
-      height: 300px;
-      background-color: #DCDCDC;
-      overflow: scroll; /* showing scrollbars */
-}
+
 
