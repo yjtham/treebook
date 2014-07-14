@@ -8,11 +8,11 @@
   <span class= "glyphicon glyphicon-star"></span> <%= link_to "Post a New Random Status", new_status_path %>
 </button>
 
-
+<div style="height:400px;overflow:scroll">
 <% @statuses.each do |status| %>
 
 <div class="status">
-  <div style="height:400px;overflow:scroll">
+  
   <div class= "row">
   <div class= "span1">
     <%= image_tag status.user.gravatar_url %>
