@@ -1,3 +1,4 @@
+<div style="line-height:3em;overflow:scroll;padding:5px;">
 <div class="page-header", margin: 10px  ;>
 <h1>A Virtual World of Randomness </h1>
   
@@ -8,15 +9,13 @@
   <span class= "glyphicon glyphicon-star"></span> <%= link_to "Post a New Random Status", new_status_path %>
 </button>
 
-<div style="line-height:3em;overflow:scroll;padding:5px;color:#714D03;">
+
 <% @statuses.each do |status| %>
 <div class="status">
-  <!-- Codes by HTML.am -->
-
   <div class= "row">
   <div class= "span1">
     <%= image_tag status.user.gravatar_url %>
-    </div>
+  </div>
   <div class='span7'>
   <strong><%= status.user.full_name %> </strong>
   <p> <%=status.content%> </p>
@@ -25,18 +24,11 @@
     <span class="admin">
       |<%=link_to " "+"Edit", edit_status_path(status) %> |
       <%=link_to "Delete", status, method: :delete, data: { confirm: "Are you sure you want to delete this status?"}%>
-      </span>
+    </span>
     </div>
   </div>
   </div>
-
-  <form action="/html/tags/html_form_tag_action.cfm" method="post">
-Comments:<br />
-<textarea name="comments" id="comments">
-Hey... say something!
-</textarea><br />
-<input type="submit" value="Submit" />
-</form>
 </div>
 <% end %>
 
+</div>
