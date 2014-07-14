@@ -1,4 +1,4 @@
-<div style="width:160px;height:90px;font:24px/30px cursive;scrollbar-base-color:#FFFFF;">
+
 <div class="page-header", margin: 10px  ;>
 <h1>A Virtual World of Randomness </h1>
   
@@ -9,7 +9,7 @@
   <span class= "glyphicon glyphicon-star"></span> <%= link_to "Post a New Random Status", new_status_path %>
 </button>
 
-
+<div style="width:160px;height:90px;font:24px/30px cursive;scrollbar-base-color:#FFFFF;">
 <% @statuses.each do |status| %>
 <div class="status">
   <div class= "row">
@@ -28,7 +28,7 @@
     <form action="/html/tags/html_form_tag_action.cfm" method="post">
 Comments:<br />
   <textarea name="comments" id="comments" style="width:160px;height:90px;font:24px/30px cursive;scrollbar-base-color:#FFFFF;">
-  Hey... say something! (well, at least something that's long enough to make this comment box grow scrollbars...)
+  Hey... say something!
   </textarea><br />
   <input type="submit" value="Submit" style="background-color:#53760D;color:#D0F18F;" />
 </form>
