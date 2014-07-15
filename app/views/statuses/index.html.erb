@@ -8,9 +8,9 @@
   <span class= "glyphicon glyphicon-star"></span> <%= link_to "Post a New Random Status", new_status_path %>
 </button>
 
-
-<% @statuses.each do |status| %>
 <div style="height:400px;overflow:scroll">
+<% @statuses.each do |status| %>
+</div>
 <div class="status">
   
   <div class= "row">
@@ -32,5 +32,5 @@
   </div>
   </div>
 </div>
-</div>
+
 <% end %>
