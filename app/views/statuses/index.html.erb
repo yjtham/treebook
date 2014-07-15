@@ -19,15 +19,15 @@
   </div>
   <div class='span7'>
   <strong><%= status.user.full_name %> </strong>
-  <p> <%=status.content%> </p>
+  <p> <%=status.content%>   <div style="height:400px;overflow:scroll">
+  </div> </p>
   <div class="meta">
     <%=link_to time_ago_in_words(status.created_at)+ " "+ "ago", status %>
     
     <span class="admin">
       |<%=link_to " "+"Edit", edit_status_path(status) %> |
       <%=link_to "Delete", status, method: :delete, data: { confirm: "Are you sure you want to delete this status?"}%>
-      <div style="height:400px;overflow:scroll">
-  </div>
+
     </span>
 
     </div>
