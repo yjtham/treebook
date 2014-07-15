@@ -1,3 +1,5 @@
+<div style="height:400px;overflow:scroll">
+   
 <div class="page-header", margin: 10px  ;>
 <h1>A Virtual World of Randomness </h1>
   
@@ -12,8 +14,6 @@
 <% @statuses.each do |status| %>
 
 <div class="status">
-  <div style="height:400px;overflow:scroll">
-  </div> 
   <div class= "row">
   <div class= "span1">
     <%= image_tag status.user.gravatar_url %>
@@ -36,3 +36,5 @@
 </div>
 
 <% end %>
+
+</div>
