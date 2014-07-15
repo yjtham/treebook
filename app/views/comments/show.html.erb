@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @comment.name %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @comment.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_comment_path(@comment) %> |
+<%= link_to 'Back', comments_path %>
+
+<p><strong>Title:</strong><%= @status.title %></p>
+
+<p><strong>Text:</strong><%= @status.text %></p>
+
+
+<% if !@status.comments.empty? %>
+  <h2>Comments</h2>
+  <%= render @comment %>
+<% end %>
+
+
+<h2>Add a comment:</h2>
+<%= render "comments/form" %>
+
+<%= link_to 'Edit Post', edit_user_statuses_path(@user.id,@post) %> |
+<%= link_to 'Back to Posts',  user_statuses_path(@user.id) %>
+

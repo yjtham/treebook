@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :comments
+
   get 'profiles/show'
 
   devise_for :users
@@ -70,3 +72,5 @@ end
   #     resources :products
   #   end
 end
+
+

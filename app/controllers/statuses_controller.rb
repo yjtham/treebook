@@ -11,6 +11,9 @@ class StatusesController < ApplicationController
   # GET /statuses/1
   # GET /statuses/1.json
   def show
+    
+    @status = Post.find(params[:id])
+    @comment = Comment.new
   end
 
   # GET /statuses/new
